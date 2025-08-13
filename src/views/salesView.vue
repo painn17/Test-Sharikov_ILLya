@@ -1,13 +1,13 @@
 <template>
   <GenericPage
     endpoint="sales"
-    :columns="stocks.columns"
-    :sortState="stocks.sortState"
-    :chart-field="price"
+    :columns="sales.columns"
+    :sortState="sales.sortState"
+    :chart-field="total_price"
   />
 </template>
 
 <script setup>
 import GenericPage from '@/components/GenericPage.vue'
-import { stocks } from '@/consts/constants.js'
+import { sales } from '@/consts/constants.js'
 </script>
