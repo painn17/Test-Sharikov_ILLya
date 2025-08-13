@@ -3,7 +3,7 @@
     endpoint="sales"
     :columns="sales.columns"
     :sortState="sales.sortState"
-    :chart-field="total_price"
+    chart-field="total_price"
   />
 </template>
 

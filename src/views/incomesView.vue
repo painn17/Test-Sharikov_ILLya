@@ -3,7 +3,7 @@
     endpoint="incomes"
     :columns="stocks.columns"
     :sortState="stocks.sortState"
-    :chartField="price"
+    chartField="price"
   />
 </template>
 
