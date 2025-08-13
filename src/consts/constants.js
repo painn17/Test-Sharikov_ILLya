@@ -29,7 +29,7 @@ export const sales = {
     { title: 'Дата изменения', key: 'last_change_date' },
     { title: 'Сумма', key: 'total_price', sorter: 'default' },
     { title: 'Скидка %', key: 'discount_percent', sorter: 'default' },
-    { title: 'Реализация', key: 'is_realization', sorter: 'default' },
+    // { title: 'Реализация', key: 'is_realization', sorter: 'default' },
   ],
 
   sortState: [
