@@ -1,0 +1,1 @@
+import{i as n,_ as o}from"./constants-D695ZU9R.js";import{c,o as e,u as s}from"./index-SE993FWH.js";const u={__name:"incomesView",setup(a){return(t,m)=>(e(),c(o,{endpoint:"incomes",columns:s(n).columns,chartField:"quantity"},null,8,["columns"]))}};export{u as default};

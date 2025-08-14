@@ -1,0 +1,1 @@
+import{s,_ as c}from"./constants-D695ZU9R.js";import{c as o,o as e,u as t}from"./index-SE993FWH.js";const u={__name:"stocksView",setup(n){return(r,a)=>(e(),o(c,{endpoint:"stocks",columns:t(s).columns,"chart-field":"price"},null,8,["columns"]))}};export{u as default};
