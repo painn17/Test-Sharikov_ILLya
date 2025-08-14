@@ -1,0 +1,1 @@
+import{s,_ as o}from"./constants-XjNG5B9i.js";import{c as r,o as e,u as t}from"./index-JMrH8_r8.js";const u={__name:"ordersView",setup(a){return(c,n)=>(e(),r(o,{endpoint:"orders",columns:t(s).columns,sortState:t(s).sortState,"chart-field":"price"},null,8,["columns","sortState"]))}};export{u as default};

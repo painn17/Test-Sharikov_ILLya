@@ -1,0 +1,1 @@
+import{a as s,_ as a}from"./constants-ChL0SCod.js";import{c as e,o,u as c}from"./index-CZTxcrug.js";const m={__name:"salesView",setup(n){return(r,t)=>(o(),e(a,{endpoint:"sales",columns:c(s).columns,"chart-field":"total_price"},null,8,["columns"]))}};export{m as default};
