@@ -1,10 +1,5 @@
 <template>
-  <GenericPage
-    endpoint="sales"
-    :columns="sales.columns"
-    :sortState="sales.sortState"
-    chart-field="total_price"
-  />
+  <GenericPage endpoint="sales" :columns="sales.columns" chart-field="total_price" />
 </template>
 
 <script setup>

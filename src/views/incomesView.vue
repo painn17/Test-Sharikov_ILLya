@@ -1,13 +1,8 @@
 <template>
-  <GenericPage
-    endpoint="incomes"
-    :columns="stocks.columns"
-    :sortState="stocks.sortState"
-    chartField="price"
-  />
+  <GenericPage endpoint="incomes" :columns="incomes.columns" chartField="quantity" />
 </template>
 
 <script setup>
 import GenericPage from '@/components/GenericPage.vue'
-import { stocks } from '@/consts/constants.js'
+import { incomes } from '@/consts/constants.js'
 </script>

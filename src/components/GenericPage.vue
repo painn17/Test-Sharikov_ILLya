@@ -15,6 +15,7 @@ const props = defineProps({
 
 const items = ref([])
 const page = ref(1)
+const lastPage = ref(null)
 const selectedStartDate = ref(new Date().toISOString().slice(0, 10))
 const selectedEndDate = ref(new Date().toISOString().slice(0, 10))
 const selectedLimit = ref(50)
@@ -23,6 +24,7 @@ const loading = ref(false)
 // Функция пагинации
 const loadPage = async (pageNum = 1) => {
   if (loading.value) return
+  if (lastPage.value !== null && pageNum > lastPage.value) return
   loading.value = true
   try {
     const res = await api.getInfo(
@@ -46,6 +48,8 @@ const loadPage = async (pageNum = 1) => {
     if (pageNum === 1) items.value = normalized
     else items.value.push(...normalized)
     page.value = pageNum + 1
+
+    lastPage.value = res.data.meta.last_page
   } catch (e) {
     console.error(e)
   } finally {
@@ -82,8 +86,12 @@ onMounted(() => {
 
     <!-- Таблица с пагинацией -->
     <div class="overflow-auto h-[500px]" @scroll="handleScroll">
-      <DataTable :items="items" :columns="columns" :sortState="sortState" />
+      <DataTable :items="items" :columns="columns" />
+
       <div v-if="loading" class="text-center py-2">Загрузка...</div>
+      <div class="text-center p-2 text-xl" v-if="lastPage !== null && page > lastPage">
+        Больше нет данных
+      </div>
     </div>
 
     <!-- График -->

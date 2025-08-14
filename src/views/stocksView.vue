@@ -1,10 +1,5 @@
 <template>
-  <GenericPage
-    endpoint="stocks"
-    :columns="stocks.columns"
-    :sortState="stocks.sortState"
-    chart-field="price"
-  />
+  <GenericPage endpoint="stocks" :columns="stocks.columns" chart-field="price" />
 </template>
 
 <script setup>

@@ -7,17 +7,7 @@ export const stocks = {
     { title: 'Количество', key: 'quantity', sorter: 'default' },
     { title: 'Сумма', key: 'price', sorter: 'default' },
     { title: 'Скидка', key: 'discount', sorter: 'default' },
-    // { title: 'Реализация', key: 'is_realization', sorter: 'default' },
-  ],
-
-  sortState: [
-    { key: 'price', order: null },
-    { key: 'date', order: null },
-    { key: 'quantity', order: null },
-    { key: 'nm_id', order: null },
-    { key: 'discount', order: null },
-    { key: 'is_realization', order: null },
-    { key: 'warehouse_name', order: null },
+    { title: 'Реализация', key: 'is_realization', sorter: 'default' },
   ],
 }
 export const sales = {
@@ -29,15 +19,16 @@ export const sales = {
     { title: 'Дата изменения', key: 'last_change_date' },
     { title: 'Сумма', key: 'total_price', sorter: 'default' },
     { title: 'Скидка %', key: 'discount_percent', sorter: 'default' },
-    // { title: 'Реализация', key: 'is_realization', sorter: 'default' },
   ],
-
-  sortState: [
-    { key: 'total_price', order: null },
-    { key: 'date', order: null },
-    { key: 'discount_percent', order: null },
-    { key: 'sale_id', order: null },
-    { key: 'country_name', order: null },
-    { key: 'warehouse_name', order: null },
+}
+export const incomes = {
+  columns: [
+    { title: 'ID', key: 'income_id', sorter: 'default' },
+    { title: 'Название склада', key: 'warehouse_name', sorter: 'default' },
+    { title: 'Количество', key: 'quantity', sorter: 'default' },
+    { title: 'Дата', key: 'date', sorter: 'default' },
+    { title: 'Дата изменения', key: 'last_change_date' },
+    { title: 'Дата закрытия', key: 'date_close' },
+    { title: 'Сумма', key: 'total_price', sorter: 'default' },
   ],
 }
